@@ -1,0 +1,282 @@
+
+
+.full-background {
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.primary-background {
+    background-color: #1e005a;
+}
+
+.login-illustration {
+    background-color: white;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.login-form {
+    background-color: #fff;
+}
+
+.sub-content-container {
+    padding: 30px 10px 15px;
+    text-align: center;
+}
+
+.auth-form {
+    width: 60%;
+    align-self: center;
+    max-width: 500px;
+}
+
+.header-descr {
+    margin: 0;
+    position: relative;
+}
+
+.header-descr h2 {
+    color: #33373a;
+    line-height: 31px;
+    padding: 0;
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+
+.form .input-wrapper {
+    display: block;
+    margin: 0 auto 15px;
+    outline: none;
+    position: relative;
+}
+
+.form .input-field {
+    min-height: 46px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #dbe2ea;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+}
+
+input:not([type=range]), label, select, summary, textarea {
+    touch-action: manipulation;
+}
+
+input[type=text], textarea {
+    -webkit-appearance: none;
+}
+
+.input-error {
+    border-color: #d7a2a8!important;
+    padding: 0;
+    color: #bc2031!important;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button, input {
+    overflow: visible;
+}
+
+.input-error {
+    border-color: #d7a2a8!important;
+    padding: 0;
+    color: #bc2031!important;
+}
+
+.inline-error {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    font-size: 12px;
+    padding: 0;
+}
+
+.form .input-wrapper {
+    display: block;
+    margin: 0 auto 15px;
+    outline: none;
+    position: relative;
+}
+
+.form .input-field {
+    min-height: 46px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #dbe2ea;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+}
+
+input:not([type=range]) {
+    touch-action: manipulation;
+}
+
+ input[type=password]{
+    -webkit-appearance: none;
+}
+
+.input-error {
+    border-color: #d7a2a8!important;
+    padding: 0;
+    color: #bc2031!important;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+input {
+    overflow: visible;
+}
+
+.input-error {
+    border-color: #d7a2a8!important;
+    padding: 0;
+    color: #bc2031!important;
+}
+
+.form .input-field {
+    min-height: 46px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #dbe2ea;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+}
+
+.fake-a, a {
+    color: #4a34a2;
+    cursor: pointer;
+}
+
+
+a {
+    background-color: initial;
+    touch-action: manipulation;
+    transition: color .3s;
+    outline: none;
+}
+
+p {
+    margin: 15px 0;
+}
+
+.btn.loading-button {
+    position: relative;
+}
+
+
+
+
+.btn-l, .btn-sm {
+    font-weight: 600;
+}
+
+.btn-primary {
+    color: #fff!important;
+    background-color: #432f93!important;
+    border-color: #432f93!important;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+    background-repeat: repeat-x;
+    background-position: -1px -1px;
+    background-size: 110% 110%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 6px 18px;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: initial;
+    border: 2px solid #401c86;
+    color: #401c86;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: .15px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-l {
+    padding: 4px 28px;
+    font-size: 12px;
+    line-height: 30px;
+    border-radius: 30px;
+}
+
+.loading-button {
+    height: 55px;
+    width: 200px;
+    padding: 0;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    overflow: visible;
+    font: inherit;
+}
+
+button, input:not([type=range]), label, select, summary, textarea {
+    touch-action: manipulation;
+}
+
+.link {
+    color: #4a34a2;
+    cursor: pointer;
+}
