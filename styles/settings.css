@@ -1,0 +1,247 @@
+/* = NavBar------------------------------------------------------------- */
+
+.hero .hero-nav {
+	padding-left: inherit;
+	padding-right: inherit;
+}
+
+/* Handle Multi Level Navigation */
+.navbar-light .navbar-nav .nav-link {
+	color: rgb(64, 64, 64);
+}
+
+.btco-menu li>a {
+	padding: 10px 15px;
+	color: #000;
+}
+
+.btco-menu .active a:focus,
+.btco-menu li a:focus,
+.navbar>.show>a:focus {
+	background: transparent;
+	outline: 0;
+}
+
+.dropdown-menu .show>.dropdown-toggle::after {
+	transform: rotate(-90deg);
+}
+
+/* = Bric adjustment margins
+-------------------------------------------------------------- */
+
+.mg-md {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* = Buttons
+-------------------------------------------------------------- */
+
+.btn-d,
+.btn-d:hover,
+.btn-d:focus {
+	color: #FFF;
+	background: rgba(0, 0, 0, .3);
+}
+
+/* Prevent ugly blue glow on chrome and safari */
+button {
+	outline: none !important;
+}
+
+.btn-rd {
+	border-radius: 40px;
+}
+
+/* = Icons
+-------------------------------------------------------------- */
+.icon-md {
+	font-size: 30px !important;
+}
+
+.card-sq,
+.card-sq .card-header,
+.card-sq .card-footer {
+	border-radius: 0;
+}
+
+.card-rd {
+	border-radius: 30px;
+}
+
+.card-rd .card-header {
+	border-radius: 29px 29px 0 0;
+}
+
+.card-rd .card-footer {
+	border-radius: 0 0 29px 29px;
+}
+
+
+/* = Forms----------------------------------------------------------- */
+
+.form-control {
+	border-color: rgba(0, 0, 0, .1);
+	box-shadow: none;
+}
+
+/* ScrollToTop button */
+
+.scrollToTop {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	opacity: 0;
+	z-index: 500;
+	transition: all .3s ease-in-out;
+}
+
+.scrollToTop span {
+	margin-top: 6px;
+}
+
+.showScrollTop {
+	font-size: 14px;
+	opacity: 1;
+}
+
+/* = Custom Styling
+-------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+.btn,
+a {
+	font-family: "Helvetica";
+}
+
+.img-style {
+	width: 157px;
+}
+
+.h3-style {
+	width: 76.82%;
+}
+
+.h3-heading-3-style {
+	width: 22.8%;
+	font-size: 15px;
+}
+
+.h1-style {
+	font-size: px;
+	line-height: 48px;
+}
+
+.h3-account-style {
+	width: 78.97%;
+}
+
+.h3-social-style {
+	width: 69.96%;
+	font-size: 28px;
+}
+
+.h3- notification-style {
+	width: 100%;
+	font-size: 28px;
+}
+
+
+/* = Colour
+-------------------------------------------------------------- */
+
+/* Background colour styles */
+
+.bgc-purple-heart {
+	background-color: #6541A5;
+}
+
+/* Text colour styles */
+
+.tc-purple-heart {
+	color: #6541A5 !important;
+}
+
+.tc-white {
+	color: #FFFFFF !important;
+}
+
+/* Button colour styles */
+
+.btn-purple-heart {
+	background: #6541A5;
+	color: #FFFFFF !important;
+}
+
+.btn-purple-heart:hover {
+	background: #513484 !important;
+	color: #FFFFFF !important;
+}
+
+/* Icon colour styles */
+
+.icon-white {
+	color: #FFFFFF !important;
+	border-color: #FFFFFF !important;
+}
+
+/* = Mobile adjustments 
+-------------------------------------------------------------- */
+
+
+@media (max-width: 767px) {
+
+	.b-parallax {
+		background-attachment: scroll;
+	}
+
+
+	.a-block {
+		padding: 0 10px;
+	}
+
+	.btn-dwn {
+		display: none;
+	}
+
+	.voffset {
+		margin-top: 5px;
+	}
+
+	.voffset-md {
+		margin-top: 20px;
+	}
+
+	.voffset-lg {
+		margin-top: 30px;
+	}
+
+	form {
+		padding: 5px;
+	}
+
+	.close-lightbox {
+		display: inline-block;
+	}
+
+	.blocsapp-device-iphone5 {
+		background-size: 216px 425px;
+		padding-top: 60px;
+		width: 216px;
+		height: 425px;
+	}
+
+	.blocsapp-device-iphone5 img {
+		width: 180px;
+		height: 320px;
+	}
+}
