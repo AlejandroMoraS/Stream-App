@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
+    <title>Login</title>
 
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="styles/login.css">
 
@@ -22,26 +21,29 @@
     <div class="full-background primary-background login" style="display: flex;">
         <div class="flex-box login-illustration"><!-- <img alt="" src="https://app.roger.ai/icons/logo-roger-primary.svg"
                 style="width: 100px; position: absolute; left: 50px; top: 50px;"> -->
-                <img src="https://app.roger.ai/icons/ill/head_ill_login.svg" alt=""></div>
+                <img src="./assets/imgs/login.svg" alt=""></div>
         <div class="flex-box sub-content-container login-form">
             <form class="form auth-form onboardin-form" style="text-align: left;">
                 <div class="header-descr">
-                    <h2>Login</h2>
+                  <h1 style="margin-bottom: 35px">Login</h1>
                 </div>
                 <div class="input-wrapper"><input class="input-field" name="email" placeholder="Email" type="text"
                         value=""></div>
                 <div class="input-wrapper"><input class="input-field" name="password" placeholder="Password"
-                        type="password" value=""></div><a href="/forgot-password"><span>Forgot Password?</span></a>
+                        type="password" value=""></div><a href="#"><span>Forgot Password?</span></a>
                 <p style="color: rgb(130, 139, 148);"><span
                         style="margin-top: 40px; margin-bottom: 15px; display: block;"><span
                             style="max-height: 55px;"><button id="submit-button"
                                 class="btn btn-l btn-primary loading-button"
-                                type="submit"><span>Login</span></button></span></span><span class="link"><span>Don't
-                            have an account?</span></span></p>
+                                type="submit"><span>Login</span></button></span></span><span class="link"><a href="register.html">Don't
+                            have an account?</a></span></p>
             </form>
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 

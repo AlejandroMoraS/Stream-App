@@ -2,206 +2,213 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>StreamTV</title>
+  <title>StreamTV</title>
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="styles/style.css">
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="styles/style.css">
 
-    <!-- Font Awesome JS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Font Awesome JS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3 style="text-align: center">Stream TV</h3>
-                <strong>ST</strong>
-            </div>
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3 style="text-align: center">StreamTV</h3>
+        <strong>ST</strong>
+      </div>
 
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a style="text-align: center" href="#" class="article">Start Streaming</a>
-                </li>
+      <ul class="list-unstyled CTAs">
+        <li>
+          <a style="text-align: center" href="#" class="article">Start Streaming</a>
+        </li>
+      </ul>
+
+      <ul class="list-unstyled components">
+
+        <li>
+          <a href="#" class="active-sidebar">
+            <ion-icon name="home"></ion-icon>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="categories.html">
+            <ion-icon name="people"></ion-icon>
+            Subscriptions
+          </a>
+        </li>
+        <li>
+          <a href="settings.html">
+            <ion-icon name="mail-open"></ion-icon>
+            Settings
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid" style="align-items: baseline;">
+
+          <button type="button" id="sidebarCollapse" class="btn" style="color: white">
+            <i class="fas fa-align-left"></i>
+          </button>
+
+          <div class="search-container" style="display: inherit;">
+            <input type="text" id="search-bar" placeholder="Search streams"
+              style="padding-right: 52px; color: white; border-color: #1b1a20; background: #1e1d23; border-radius: 5px;">
+            <a href="#">
+              <ion-icon name="search"></ion-icon>
+            </a>
+          </div>
+
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Sign Up</a>
+              </li>
             </ul>
-
-            <ul class="list-unstyled components">
-
-                <li>
-                    <a href="#" class="active-sidebar">
-                      <ion-icon name="home"></ion-icon>
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="people"></ion-icon>
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="help"></ion-icon>
-                        FAQ
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="mail-open"></ion-icon>
-                        Contact
-                    </a>
-                </li>
-            </ul>
-
-        </nav>
-
-        <!-- Page Content  -->
-        <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid" style="align-items: baseline;">
-
-                    <button type="button" id="sidebarCollapse" class="btn" style="color: white">
-                        <i class="fas fa-align-left"></i>
-                    </button>
-
-                    <div class="search-container" style="display: inherit;">
-                      <input type="text" id="search-bar" placeholder="Search streams" style="padding-right: 52px; color: white; border-color: #1b1a20; background: #1e1d23; border-radius: 5px;">
-                      <a href="#"><ion-icon name="search"></ion-icon></a>
-                    </div>
-
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sign Up</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-            <div class="videos">
-
-              <h3 style="margin-bottom: 35px">Recommended for you</h3>
-              <div class="row">
-
-                <div class="col-sm">
-                  <div class="recommended-video" style="background-image: url('./assets/imgs/c1.jpg');">
-                  </div>
-                  <p>Awesome video</p>
-                </div>
-
-                <div class="col-sm">
-                  <div class="recommended-video" style="background-image: url('./assets/imgs/c2.jpg');">
-                  </div>
-                  <p>Elon reacts to dead deer</p>
-                </div>
-
-                <div class="col-sm">
-                  <div class="recommended-video" style="background-image: url('./assets/imgs/c3.jpg');">
-                  </div>
-                  <p>Come see me</p>
-                </div>
-
-              </div>
-
-              <h3 style="margin-top: 30px">Videos</h3>
-              <div class="" style="width: 100%">
-
-              <div class="row" style="width: 100%">
-                  <div class="col-sm">
-                    <div class="video-item">
-                      <div class="video" style="background-image: url('./assets/imgs/c5.jpg');">
-                      </div>
-                      <p>The Moonpig Bug</p>
-                    </div>
-                  </div>
-                  <div class="col-sm">
-                    <div class="video-item">
-                      <div class="video" style="background-image: url('./assets/imgs/c6.jpg');">
-                      </div>
-                      <p>Is reality real?</p>
-                    </div>
-                  </div>
-                  <div class="col-sm">
-                    <div class="video-item">
-                      <div class="video" style="background-image: url('./assets/imgs/c7.jpg');">
-                      </div>
-                      <p>Bitch Lasagna</p>
-                    </div>
-                  </div>
-                  <div class="col-sm">
-                    <div class="video-item">
-                      <div class="video" style="background-image: url('./assets/imgs/c8.jpg');">
-                      </div>
-                      <p>Gangnam style loop 48 hours</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row" style="width: 100%">
-                    <div class="col-sm">
-                      <div class="video-item">
-                        <div class="video" style="background-image: url('./assets/imgs/c9.jpg');">
-                        </div>
-                        <p>Si te ries pierdes NIVEL EXTREMO DIOS</p>
-                      </div>
-                    </div>
-                    <div class="col-sm">
-                      <div class="video-item">
-                        <div class="video" style="background-image: url('./assets/imgs/c4.jpg');">
-                        </div>
-                        <p>Infiel se desmaya al ver a Lizbeth</p>
-                      </div>
-                    </div>
-                    <div class="col-sm">
-                      <div class="video-item">
-                        <div class="video" style="background-image: url('./assets/imgs/c10.jpg');">
-                        </div>
-                        <p>Baby shark do do do do do do</p>
-                      </div>
-                    </div>
-                    <div class="col-sm">
-                      <div class="video-item">
-                        <div class="video" style="background-image: url('./assets/imgs/c11.jpg');">
-                        </div>
-                        <p>Peppa pig descubre las matematicas</p>
-                      </div>
-                    </div>
-                  </div>
-
-            </div>
+          </div>
         </div>
+      </nav>
+
+
+      <div class="videos">
+
+        <h3 style="margin-bottom: 35px">Recommended for you</h3>
+        <div class="row">
+
+          <div class="col-sm">
+            <div class="recommended-video" style="background-image: url('./assets/imgs/c1.jpg');">
+            </div>
+            <p>Awesome video</p>
+          </div>
+
+          <div class="col-sm">
+            <div class="recommended-video" style="background-image: url('./assets/imgs/c2.jpg');">
+            </div>
+            <p>Elon reacts to dead deer</p>
+          </div>
+
+          <div class="col-sm">
+            <div class="recommended-video" style="background-image: url('./assets/imgs/c3.jpg');">
+            </div>
+            <p>Come see me</p>
+          </div>
+
+        </div>
+
+        <h3 style="margin-top: 30px">Videos</h3>
+        <div class="" style="width: 100%">
+
+          <div class="row" style="width: 100%">
+            <div class="col-sm">
+              <div class="video-item">
+                <div class="video" style="background-image: url('./assets/imgs/c5.jpg');">
+                </div>
+                <p>The Moonpig Bug</p>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="video-item">
+                <div class="video" style="background-image: url('./assets/imgs/c6.jpg');">
+                </div>
+                <p>Is reality real?</p>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="video-item">
+                <div class="video" style="background-image: url('./assets/imgs/c7.jpg');">
+                </div>
+                <p>Bitch Lasagna</p>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="video-item">
+                <div class="video" style="background-image: url('./assets/imgs/c8.jpg');">
+                </div>
+                <p>Gangnam style loop 48 hours</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="width: 100%">
+            <div class="col-sm">
+              <div class="video-item">
+                <div class="video" style="background-image: url('./assets/imgs/c9.jpg');">
+                </div>
+                <p>Si te ries pierdes NIVEL EXTREMO DIOS</p>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="video-item">
+                <div class="video" style="background-image: url('./assets/imgs/c4.jpg');">
+                </div>
+                <p>Infiel se desmaya al ver a Lizbeth</p>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="video-item">
+                <div class="video" style="background-image: url('./assets/imgs/c10.jpg');">
+                </div>
+                <p>Baby shark do do do do do do</p>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="video-item">
+                <div class="video" style="background-image: url('./assets/imgs/c11.jpg');">
+                </div>
+                <p>Peppa pig descubre las matematicas</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
+      $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+          $('#sidebar').toggleClass('active');
         });
+      });
     </script>
 </body>
 

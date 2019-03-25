@@ -1,98 +1,177 @@
 <!doctype html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+	<!-- Font Awesome JS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <title>Home</title>
+	<title>User Settings</title>
 
-    <link rel="stylesheet" href="styles/settings.css">
+	<link rel="stylesheet" href="styles/settings.css">
+	<link rel="stylesheet" href="styles/style.css">
 
-
-
-    
-<!-- Analytics -->
- 
-<!-- Analytics END -->
-    
 </head>
-<body>
-<!-- Main container -->
-<div class="page-container">
-    
-<!-- bloc-0 -->
 
-		<div class="row" style="max-width: 700px">
-			
-			<div class="col">
-				<h1 class="mg-md tc-4639 ">
-					Personal Details
-				</h1>
-				<div class="row">
-					<div class="col-lg-3">
-						<img src="https://i0.wp.com/studiolorier.com/wp-content/uploads/2018/10/Profile-Round-Sander-Lorier.jpg?ssl=1" data-src="img/nico-round-300x300.png" class="img-fluid rounded-circle img-style float-lg-none lazyload" />
+<body>
+
+	<div class="wrapper">
+		<!-- Sidebar  -->
+		<nav id="sidebar">
+			<div class="sidebar-header">
+				<h3 style="text-align: center">StreamTV</h3>
+				<strong>ST</strong>
+			</div>
+
+			<ul class="list-unstyled CTAs">
+				<li>
+					<a style="text-align: center" href="#" class="article">Start Streaming</a>
+				</li>
+			</ul>
+
+			<ul class="list-unstyled components">
+				<li>
+					<a href="index.html">
+						<ion-icon name="home"></ion-icon>
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="categories.html">
+						<ion-icon name="people"></ion-icon>
+						Subscriptions
+					</a>
+				</li>
+				<li>
+					<a href="settings.html" class="active-sidebar">
+						<ion-icon name="mail-open"></ion-icon>
+						Settings
+					</a>
+				</li>
+			</ul>
+
+		</nav>
+
+		<!-- Page Content  -->
+		<div id="content">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid" style="align-items: baseline;">
+
+					<button type="button" id="sidebarCollapse" class="btn" style="color: white">
+						<i class="fas fa-align-left"></i>
+					</button>
+
+					<div class="search-container" style="display: inherit;">
+						<input type="text" id="search-bar" placeholder="Search streams"
+							style="padding-right: 52px; color: white; border-color: #1b1a20; background: #1e1d23; border-radius: 5px;">
+						<a href="#">
+							<ion-icon name="search"></ion-icon>
+						</a>
 					</div>
-					<div class="col">
-						<h2 class="mg-md tc-purple-heart">
-							Jose Chuy Gutierrez
-						</h2>
-						<h2 class="mg-md tc-purple-heart">
-							@JoseChuy
-						</h2>
+
+					<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<i class="fas fa-align-justify"></i>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="nav navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="login.html">Login</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="register.html">Sign Up</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<form id="form_2" novalidate data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-					<div class="form-group">
-						<label>
-							Full Name
-						</label>
-						<input id="name2" value = "Jose Chuy Gutierrez" class="form-control field-style" required />
+			</nav>
+
+			<div class="row" style="max-width: 700px; color: white; padding-left: 35px; padding-right: 35px;">
+
+				<div class="col">
+					<h1 class="mg-md tc-4639 ">
+						Personal Details
+					</h1>
+					<div class="row">
+						<div class="col-lg-3">
+							<img
+								src="https://i0.wp.com/studiolorier.com/wp-content/uploads/2018/10/Profile-Round-Sander-Lorier.jpg?ssl=1"
+								data-src="img/nico-round-300x300.png"
+								class="img-fluid rounded-circle img-style float-lg-none lazyload" />
+						</div>
+						<div class="col">
+							<h2 class="mg-md tc-purple-heart">
+								Jose Chuy Gutierrez
+							</h2>
+							<h2 class="mg-md tc-purple-heart">
+								@JoseChuy
+							</h2>
+						</div>
 					</div>
-					<div class="form-group">
-						<label>
-							Email
-						</label>
-						<input id="email2"  value = "JoseChuy@gmail.com" class="form-control" type="email" data-error-validation-msg="Not a valid email address" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Description <br>
-						</label>
-						<textarea placeholder ="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." id="message2" class="form-control text-area-style" rows="4" cols="50" required></textarea>
-					</div> 
-					<button class="bloc-button btn btn-purple-heart btn-rd btn-lg btn-block" type="submit">
-						Submit
-					</button>
-				</form>
+					<form id="form_2" novalidate data-success-msg="Your message has been sent."
+						data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<div class="form-group">
+							<label>
+								Full Name
+							</label>
+							<input id="name2" value="Jose Chuy Gutierrez" class="form-control field-style" required />
+						</div>
+						<div class="form-group">
+							<label>
+								Email
+							</label>
+							<input id="email2" value="JoseChuy@gmail.com" class="form-control" type="email"
+								data-error-validation-msg="Not a valid email address" required />
+						</div>
+						<div class="form-group">
+							<label>
+								Description <br>
+							</label>
+							<textarea
+								placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+								id="message2" class="form-control text-area-style" rows="4" cols="50" required></textarea>
+						</div>
+						<button class="bloc-button btn btn-purple-heart btn-rd btn-lg btn-block" type="submit">
+							Submit
+						</button>
+					</form>
+				</div>
 			</div>
+
 		</div>
 
-<!-- bloc-0 END -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+		</script>
 
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
+		<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#sidebarCollapse').on('click', function () {
+					$('#sidebar').toggleClass('active');
+				});
+			});
+		</script>
 
-</div>
-<!-- Main container END -->
-    
-
-
-
-<!-- Preloader -->
-<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
-<!-- Preloader END -->
 
 </body>
+
 </html>

@@ -86,7 +86,6 @@ input[type=text], textarea {
 }
 
 button, input, select, textarea {
-    font-family: inherit;
     font-size: inherit;
     line-height: inherit;
 }
@@ -148,7 +147,6 @@ input:not([type=range]) {
 }
 
 input {
-    font-family: inherit;
     font-size: inherit;
     line-height: inherit;
 }
