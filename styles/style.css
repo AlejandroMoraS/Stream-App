@@ -2,19 +2,11 @@
     DEMO STYLE
 */
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
-}
-
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
-}
+/*@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";*/
+/*body {*/
+    /*font-family: 'Poppins', sans-serif;*/
+    /*background: #fafafa;*/
+/*}*/
 
 a,
 a:hover,
@@ -26,11 +18,9 @@ a:focus {
 
 .navbar {
     padding: 15px 10px;
-    background: #fff;
     border: none;
     border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .navbar-btn {
@@ -39,16 +29,116 @@ a:focus {
     border: none;
 }
 
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
+/* ---------------------------------------------------
+    Header
+----------------------------------------------------- */
+
+.nav-link {
+  color: white !important;
 }
 
-i,
-span {
-    display: inline-block;
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/* ---------------------------------------------------
+    Sidebar
+----------------------------------------------------- */
+
+.components li {
+    padding: 10px 0;
+}
+
+@media only screen and (min-width: 400px) {
+
+  #sidebar ion-icon {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* ---------------------------------------------------
+    Videos
+----------------------------------------------------- */
+
+.videos {
+  color: white;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.videos h3 {
+  font-size: 17px;
+}
+
+.recommended-video {
+  width: 100%;
+  height: 270px;
+  background: red;
+  border-radius: 5px;
+  background-size: cover;
+}
+
+.video {
+  width: 100%;
+  height: 200px;
+  background: red;
+  border-radius: 5px;
+  background-size: cover;
+}
+
+
+.videos p {
+  margin-top: 10px;
+}
+
+/* ---------------------------------------------------
+    SearchBar
+----------------------------------------------------- */
+
+.search-container {
+  width: 380px;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+
+.search-container a {
+  position: relative;
+    left: -41px;
+    top: 10px;
+}
+
+input#search-bar {
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+}
+input#search-bar:focus {
+  border: 1px solid #008ABF;
+  transition: 0.35s ease;
+  color: #008ABF;
+}
+input#search-bar:focus::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+input#search-bar:focus::-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+input#search-bar:focus:-ms-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+.search-container ion-icon {
+  color: white;
+  font-size: 25px;
 }
 
 /* ---------------------------------------------------
@@ -63,7 +153,7 @@ span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
+    background: #6541a5;
     color: #fff;
     transition: all 0.3s;
 }
@@ -115,7 +205,6 @@ span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
 }
 
 #sidebar .sidebar-header strong {
@@ -125,7 +214,6 @@ span {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
 }
 
 #sidebar ul li a {
@@ -134,32 +222,20 @@ span {
     display: block;
 }
 
-#sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
+#sidebar ul.components li a {
+    color: #947ac4;
+    padding: 0 !important;
 }
 
 #sidebar ul li a i {
     margin-right: 10px;
 }
 
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
+#sidebar ul.components li a:hover, .active-sidebar {
+    color: white !important;
+    border-right: solid;
 }
 
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
 
 ul ul a {
     font-size: 0.9em !important;
@@ -168,7 +244,7 @@ ul ul a {
 }
 
 ul.CTAs {
-    padding: 20px;
+  padding: 0px 20px;
 }
 
 ul.CTAs a {
@@ -179,15 +255,9 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
-
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
+    background: #52299f !important;
 }
 
 /* ---------------------------------------------------
@@ -196,9 +266,9 @@ a.article:hover {
 
 #content {
     width: 100%;
-    padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+    background: #25222d;
 }
 
 /* ---------------------------------------------------
