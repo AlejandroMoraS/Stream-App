@@ -16,27 +16,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 
 
-/* = Blocs
--------------------------------------------------------------- */
-
-.bloc{
-	width:100%;
-	clear:both;
-	background: 50% 50% no-repeat;
-	padding:0 50px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	position:relative;
-	display:flex;
-}
-.bloc .container{
-	padding-left:0;
-	padding-right:0;
-}
-
-
 /* = NavBar
 -------------------------------------------------------------- */
 
@@ -85,14 +64,6 @@ button{
 
 /* = Text & Icon Styles
 -------------------------------------------------------------- */
-.blockquote{
-	padding:0 20px;
-	border-left:2px solid;
-}
-.blockquote.text-right{
-	border-left:0;
-	border-right:2px solid;
-}
 
 
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
